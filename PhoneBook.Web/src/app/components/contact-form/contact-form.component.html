@@ -1,0 +1,115 @@
+<div class="container">
+  <h2>{{ (isEditMode ? 'EDIT_CONTACT' : 'ADD_CONTACT') | translate }}</h2>
+
+  <div *ngIf="loading" class="loading">{{ 'LOADING' | translate }}</div>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" *ngIf="!loading">
+    <div class="form-group">
+      <label for="firstName">{{ 'FIRST_NAME' | translate }} *</label>
+      <input
+        type="text"
+        id="firstName"
+        formControlName="firstName"
+        [placeholder]="('FIRST_NAME' | translate) + ' ' + ('ENTER' | translate)"
+        class="form-control"
+        [class.is-invalid]="f['firstName'].invalid && f['firstName'].touched"
+      />
+      <div *ngIf="f['firstName'].invalid && f['firstName'].touched" class="invalid-feedback">
+        <span *ngIf="f['firstName'].errors?.['required']">{{ 'FIRST_NAME_REQUIRED' | translate }}</span>
+        <span *ngIf="f['firstName'].errors?.['minlength']">{{ 'FIRST_NAME_MINLENGTH' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">{{ 'LAST_NAME' | translate }} *</label>
+      <input
+        type="text"
+        id="lastName"
+        formControlName="lastName"
+        [placeholder]="('LAST_NAME' | translate) + ' ' + ('ENTER' | translate)"
+        class="form-control"
+        [class.is-invalid]="f['lastName'].invalid && f['lastName'].touched"
+      />
+      <div *ngIf="f['lastName'].invalid && f['lastName'].touched" class="invalid-feedback">
+        <span *ngIf="f['lastName'].errors?.['required']">{{ 'LAST_NAME_REQUIRED' | translate }}</span>
+        <span *ngIf="f['lastName'].errors?.['minlength']">{{ 'LAST_NAME_MINLENGTH' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">{{ 'PHONE' | translate }} *</label>
+      <input
+        type="text"
+        id="phone"
+        formControlName="phone"
+        [placeholder]="('PHONE' | translate) + ' ' + ('ENTER' | translate)"
+        class="form-control"
+        [class.is-invalid]="f['phone'].invalid && f['phone'].touched"
+      />
+      <div *ngIf="f['phone'].invalid && f['phone'].touched" class="invalid-feedback">
+        <span *ngIf="f['phone'].errors?.['required']">{{ 'PHONE_REQUIRED' | translate }}</span>
+        <span *ngIf="f['phone'].errors?.['pattern']">{{ 'PHONE_INVALID' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">{{ 'EMAIL' | translate }} *</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        [placeholder]="('EMAIL' | translate) + ' ' + ('ENTER' | translate)"
+        class="form-control"
+        [class.is-invalid]="f['email'].invalid && f['email'].touched"
+      />
+      <div *ngIf="f['email'].invalid && f['email'].touched" class="invalid-feedback">
+        <span *ngIf="f['email'].errors?.['required']">{{ 'EMAIL_REQUIRED' | translate }}</span>
+        <span *ngIf="f['email'].errors?.['email']">{{ 'EMAIL_INVALID' | translate }}</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="birthDate">{{ 'BIRTH_DATE' | translate }}</label>
+      <input
+        type="date"
+        id="birthDate"
+        formControlName="birthDate"
+        class="form-control"
+       />
+    </div>
+
+    <div class="form-group">
+      <label for="address">{{ 'ADDRESS' | translate }}</label>
+      <textarea
+        id="address"
+        formControlName="address"
+        [placeholder]="('ADDRESS' | translate) + ' ' + ('ENTER' | translate)"
+        class="form-control"
+        rows="3"
+        [class.is-invalid]="f['address'].invalid && f['address'].touched"
+      ></textarea>
+      <div *ngIf="f['address'].invalid && f['address'].touched" class="invalid-feedback">
+        <span *ngIf="f['address'].errors?.['maxlength']">{{ 'ADDRESS_MAXLENGTH' | translate }}</span>
+      </div>
+    </div>
+
+    <!-- ✅ NOT ALANI -->
+<div class="form-group">
+  <label for="note">{{ 'NOTE' | translate }}</label>
+  <textarea
+    id="note"
+    formControlName="note"
+    [placeholder]="('NOTE' | translate) + ' ' + ('ENTER' | translate)"
+    class="form-control"
+    rows="3"
+  ></textarea>
+</div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-success" [disabled]="contactForm.invalid">
+        {{ (isEditMode ? 'UPDATE' : 'SAVE') | translate }}
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="onCancel()">{{ 'CANCEL' | translate }}</button>
+    </div>
+  </form>
+</div>

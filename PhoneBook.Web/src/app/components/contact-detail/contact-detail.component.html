@@ -1,0 +1,51 @@
+<div class="container">
+  <div *ngIf="loading" class="loading">{{ 'LOADING' | translate }}</div>
+  
+  <div *ngIf="!loading && contact" class="detail-card">
+    <h2>{{ 'CONTACT_DETAIL' | translate }}</h2>
+    
+    <div class="detail-item">
+      <span class="label">{{ 'FIRST_NAME' | translate }}:</span>
+      <span class="value">{{ contact.firstName }}</span>
+    </div>
+    
+    <div class="detail-item">
+      <span class="label">{{ 'LAST_NAME' | translate }}:</span>
+      <span class="value">{{ contact.lastName }}</span>
+    </div>
+    
+    <div class="detail-item">
+      <span class="label">{{ 'PHONE' | translate }}:</span>
+      <span class="value">{{ contact.phone }}</span>
+    </div>
+    
+    <div class="detail-item">
+      <span class="label">{{ 'EMAIL' | translate }}:</span>
+      <span class="value">{{ contact.email }}</span>
+    </div>
+    
+    <div class="detail-item">
+      <span class="label">{{ 'ADDRESS' | translate }}:</span>
+      <span class="value">{{ contact.address || '-' }}</span>
+    </div>
+    
+    <div class="detail-item" *ngIf="contact.note">
+      <span class="label">{{ 'NOTE' | translate }}:</span>
+      <span class="value">{{ contact.note }}</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="label">{{ 'CREATED_DATE' | translate }}:</span>
+      <span class="value">{{ contact.createdDate | date:'dd.MM.yyyy HH:mm:ss' }}</span>
+    </div>
+    
+    <div class="detail-actions">
+      <button class="btn btn-secondary" (click)="goBack()">{{ 'BACK' | translate }}</button>
+      <button class="btn btn-primary" [routerLink]="['/edit', contact.id]">{{ 'EDIT' | translate }}</button>
+    </div>
+  </div>
+  
+  <div *ngIf="!loading && !contact" class="error">
+    {{ 'CONTACT_NOT_FOUND' | translate }}
+  </div>
+</div>

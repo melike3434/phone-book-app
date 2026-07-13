@@ -1,0 +1,33 @@
+<div class="app-container">
+  <header>
+    <div class="header-left">
+      <h1>{{ 'APP_TITLE' | translate }}</h1>
+    </div>
+
+    <div class="header-right">
+      <!-- Tema Değiştir -->
+      <button class="header-btn theme-toggle" (click)="toggleTheme()" [title]="isDarkMode ? 'Aydınlık Mod' : 'Karanlık Mod'">
+        {{ isDarkMode ? '☀️' : '🌙' }}
+      </button>
+
+      <!-- Dil Seçici -->
+      <div class="language-switcher">
+        <button (click)="switchLanguage('tr')" [class.active]="languageService.getCurrentLanguage() === 'tr'">
+          🇹🇷 TR
+        </button>
+        <button (click)="switchLanguage('en')" [class.active]="languageService.getCurrentLanguage() === 'en'">
+          🇬🇧 EN
+        </button>
+      </div>
+
+      <!-- Çıkış Butonu -->
+      <button *ngIf="isLoggedIn" class="header-btn logout-btn" (click)="logout()">
+        🚪 {{ 'LOGOUT' | translate }}
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

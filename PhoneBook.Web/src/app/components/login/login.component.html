@@ -1,0 +1,28 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-header">
+      <h1>📞 {{ 'APP_TITLE' | translate }}</h1>
+      <p>{{ 'LOGIN_SUBTITLE' | translate }}</p>
+    </div>
+
+    <div class="login-body">
+      <div class="login-info">
+        <div class="info-item">👤 {{ 'LOGIN_USERNAME' | translate }}: <strong>admin</strong></div>
+        <div class="info-item">🔑 {{ 'LOGIN_PASSWORD' | translate }}: <strong>123456</strong></div>
+        <div class="info-note">ℹ️ {{ 'LOGIN_NOTE' | translate }}</div>
+      </div>
+
+      <button 
+        class="btn-login" 
+        (click)="onLogin()" 
+        [disabled]="isLoading"
+      >
+        {{ isLoading ? '⏳' : '🚀' }} {{ (isLoading ? 'LOADING' : 'LOGIN_BUTTON') | translate }}
+      </button>
+    </div>
+
+    <div class="login-footer">
+      <span>{{ 'LOGIN_FOOTER' | translate }}</span>
+    </div>
+  </div>
+</div>

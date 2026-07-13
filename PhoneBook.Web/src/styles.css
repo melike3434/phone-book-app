@@ -1,0 +1,72 @@
+/* Toastr stilleri */
+@import 'ngx-toastr/toastr';
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1a1a2e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .app-container {
+  background-color: #1a1a2e;
+}
+
+body.dark-mode .container {
+  background-color: transparent;
+}
+
+body.dark-mode .detail-card {
+  background-color: #16213e;
+  color: #e0e0e0;
+  border: 1px solid #2a3a5e;
+}
+
+body.dark-mode .detail-item {
+  border-bottom-color: #2a3a5e;
+}
+
+body.dark-mode .label {
+  color: #a0aec0;
+}
+
+body.dark-mode .value {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-control {
+  background-color: #1a2a4e;
+  border-color: #2a3a5e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-control:focus {
+  border-color: #4a6a9e;
+  box-shadow: 0 0 0 3px rgba(74, 106, 158, 0.3);
+}
+
+body.dark-mode .ag-theme-quartz {
+  --ag-background-color: #16213e;
+  --ag-header-background-color: #0f3460;
+  --ag-border-color: #2a3a5e;
+  --ag-foreground-color: #e0e0e0;
+}
+
+body.dark-mode .search-box .form-control {
+  background-color: #1a2a4e;
+  border-color: #2a3a5e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .search-box .form-control:focus {
+  border-color: #4a6a9e;
+  box-shadow: 0 0 0 3px rgba(74, 106, 158, 0.3);
+}

@@ -1,0 +1,105 @@
+<div class="container">
+  <h2>{{ 'CONTACT_LIST' | translate }}</h2>
+  
+  <div class="toolbar">
+    <div class="search-box">
+      <input 
+        type="text" 
+        [(ngModel)]="searchTerm" 
+        (input)="onSearch()" 
+        [placeholder]="'SEARCH' | translate"
+        class="form-control"
+      />
+    </div>
+
+    <div class="button-group">
+      <!-- ✅ Favori Filtre Butonu -->
+      <button class="btn btn-warning" (click)="toggleFavoritesFilter()">
+        {{ showFavoritesOnly ? '⭐ Tümünü Göster' : '⭐ Favoriler' }}
+      </button>
+
+      <!-- ✅ Görünüm Değiştirme Butonu -->
+      <button class="btn btn-secondary" (click)="toggleViewMode()">
+        {{ viewMode === 'table' ? '📇 Kart Görünümü' : '📋 Tablo Görünümü' }}
+      </button>
+      
+      <button class="btn btn-primary" (click)="loadContacts()">{{ 'REFRESH' | translate }}</button>
+      <button class="btn btn-success" routerLink="/add">{{ 'ADD_CONTACT' | translate }}</button>
+      <button class="btn btn-danger" (click)="deleteSelected()" [disabled]="selectedRows.length === 0">
+        🗑️ {{ 'DELETE_SELECTED' | translate }} ({{ selectedRows.length }})
+      </button>
+      <button class="btn btn-info" (click)="exportToExcel()">📊 {{ 'EXPORT_EXCEL' | translate }}</button>
+    </div>
+  </div>
+
+  <!-- ✅ TABLO GÖRÜNÜMÜ -->
+  <div *ngIf="viewMode === 'table'" class="ag-theme-quartz" style="height: 500px; width: 100%;">
+    <ag-grid-angular
+      #agGrid
+      [rowData]="contacts"
+      [columnDefs]="colDefs"
+      [pagination]="true"
+      [paginationPageSize]="10"
+      [domLayout]="'autoHeight'"
+      [rowSelection]="'multiple'"
+      (selectionChanged)="onSelectionChanged($event)"
+      class="ag-theme-quartz">
+    </ag-grid-angular>
+  </div>
+
+  <!-- KART GÖRÜNÜMÜ -->
+<div *ngIf="viewMode === 'card'" class="card-container">
+  <div *ngIf="contacts.length === 0" class="no-results">
+    {{ 'NO_ROWS' | translate }}
+  </div>
+
+  <div class="card-grid">
+    <div class="contact-card" *ngFor="let contact of contacts">
+      <!-- KART BAŞLIĞI -->
+      <div class="card-header">
+        <div class="card-avatar">
+          {{ (contact.firstName?.charAt(0) || '') + (contact.lastName?.charAt(0) || '') }}
+        </div>
+        <div class="card-name">
+          <h3>{{ contact.firstName }} {{ contact.lastName }}</h3>
+          <span class="card-phone">📞 {{ contact.phone }}</span>
+        </div>
+      </div>
+
+      <!-- KART GÖVDESİ -->
+      <div class="card-body">
+        <div class="card-detail">
+          <span class="detail-label">📧 {{ 'EMAIL' | translate }}:</span>
+          <span class="detail-value">{{ contact.email }}</span>
+        </div>
+        <div class="card-detail" *ngIf="contact.birthDate">
+          <span class="detail-label">🎂 {{ 'BIRTH_DATE' | translate }}:</span>
+          <span class="detail-value">
+            {{ contact.birthDate | date:'dd.MM.yyyy' }}
+            <span class="age-badge">({{ ageService.calculateAge(contact.birthDate) }} yaş)</span>
+          </span>
+        </div>
+        <div class="card-detail">
+          <span class="detail-label">📍 {{ 'ADDRESS' | translate }}:</span>
+          <span class="detail-value">{{ contact.address || '-' }}</span>
+        </div>
+        <div class="card-detail">
+          <span class="detail-label">📅 {{ 'CREATED_DATE' | translate }}:</span>
+          <span class="detail-value">{{ contact.createdDate | date:'dd.MM.yyyy' }}</span>
+        </div>
+        <div class="card-detail" *ngIf="contact.note">
+          <span class="detail-label">📝 {{ 'NOTE' | translate }}:</span>
+          <span class="detail-value note-text">{{ contact.note }}</span>
+        </div>
+      </div>
+
+      <!-- KART BUTONLARI -->
+      <div class="card-actions">
+        <button class="btn btn-sm btn-info" (click)="viewContact(contact.id)">👁️ {{ 'VIEW' | translate }}</button>
+        <button class="btn btn-sm btn-primary" (click)="editContact(contact.id)">✏️ {{ 'EDIT' | translate }}</button>
+        <button class="btn btn-sm btn-danger" (click)="onDeleteContact(contact.id)">🗑️ {{ 'DELETE' | translate }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

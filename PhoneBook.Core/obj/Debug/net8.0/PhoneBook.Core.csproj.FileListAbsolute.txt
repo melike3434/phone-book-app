@@ -1,0 +1,11 @@
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\bin\Debug\net8.0\PhoneBook.Core.deps.json
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\bin\Debug\net8.0\PhoneBook.Core.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\bin\Debug\net8.0\PhoneBook.Core.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.AssemblyInfoInputs.cache
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.AssemblyInfo.cs
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.csproj.CoreCompileInputs.cache
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\refint\PhoneBook.Core.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\ref\PhoneBook.Core.dll

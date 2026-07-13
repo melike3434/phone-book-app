@@ -1,0 +1,17 @@
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Service.deps.json
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Service.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Service.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Core.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Data.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Core.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\bin\Debug\net8.0\PhoneBook.Data.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.csproj.AssemblyReference.cache
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.AssemblyInfoInputs.cache
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.AssemblyInfo.cs
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.csproj.CoreCompileInputs.cache
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBoo.103BAB98.Up2Date
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\refint\PhoneBook.Service.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.pdb
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\ref\PhoneBook.Service.dll
