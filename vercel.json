@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd PhoneBook.Web && npm install --legacy-peer-deps",
+  "buildCommand": "cd PhoneBook.Web && npm run build",
+  "outputDirectory": "PhoneBook.Web/dist/phone-book.web",
+  "framework": "angular"
+}
