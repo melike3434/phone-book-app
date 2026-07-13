@@ -7,26 +7,26 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "PhoneBook.Web/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/phone-book.web",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "PhoneBook.Web/src/index.html",
+            "browser": "PhoneBook.Web/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "PhoneBook.Web/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "PhoneBook.Web/src/favicon.ico",
+              "PhoneBook.Web/src/assets"
             ],
             "styles": [
-  "src/styles.css"
-],
+              "PhoneBook.Web/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -78,13 +78,13 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "PhoneBook.Web/tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "PhoneBook.Web/src/favicon.ico",
+              "PhoneBook.Web/src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "PhoneBook.Web/src/styles.css"
             ],
             "scripts": []
           }
