@@ -150,3 +150,4 @@ C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.API\obj\Debug\net8.0\re
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.API\obj\Debug\net8.0\PhoneBook.API.pdb
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.API\obj\Debug\net8.0\PhoneBook.API.genruntimeconfig.cache
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.API\obj\Debug\net8.0\ref\PhoneBook.API.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.API\obj\Debug\net8.0\PhoneBook.API.sourcelink.json

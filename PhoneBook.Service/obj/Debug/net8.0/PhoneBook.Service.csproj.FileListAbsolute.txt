@@ -15,3 +15,4 @@ C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\refint\PhoneBook.Service.dll
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.pdb
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\ref\PhoneBook.Service.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Service\obj\Debug\net8.0\PhoneBook.Service.sourcelink.json

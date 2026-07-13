@@ -15,3 +15,4 @@ C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Data\obj\Debug\net8.0\r
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Data\obj\Debug\net8.0\PhoneBook.Data.pdb
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Data\obj\Debug\net8.0\PhoneBook.Data.genruntimeconfig.cache
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Data\obj\Debug\net8.0\ref\PhoneBook.Data.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Data\obj\Debug\net8.0\PhoneBook.Data.sourcelink.json

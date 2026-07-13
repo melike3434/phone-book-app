@@ -9,3 +9,4 @@ C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\P
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\refint\PhoneBook.Core.dll
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.pdb
 C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\ref\PhoneBook.Core.dll
+C:\Users\emin\OneDrive\Desktop\PhoneBookProjec\PhoneBook.Core\obj\Debug\net8.0\PhoneBook.Core.sourcelink.json
