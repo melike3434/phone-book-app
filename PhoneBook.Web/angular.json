@@ -7,25 +7,25 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "PhoneBook.Web/src",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/phone-book.web",
-            "index": "PhoneBook.Web/src/index.html",
-            "browser": "PhoneBook.Web/src/main.ts",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "PhoneBook.Web/tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",
             "assets": [
-              "PhoneBook.Web/src/favicon.ico",
-              "PhoneBook.Web/src/assets"
+              "./src/favicon.ico",
+              "./src/assets"
             ],
             "styles": [
-              "PhoneBook.Web/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "PhoneBook.Web:build:production"
+              "buildTarget": ":build:production"
             },
             "development": {
-              "buildTarget": "PhoneBook.Web:build:development"
+              "buildTarget": ":build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "PhoneBook.Web:build"
+            "buildTarget": ":build"
           }
         },
         "test": {
@@ -78,13 +78,13 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "PhoneBook.Web/tsconfig.spec.json",
+            "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "PhoneBook.Web/src/favicon.ico",
-              "PhoneBook.Web/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "PhoneBook.Web/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
