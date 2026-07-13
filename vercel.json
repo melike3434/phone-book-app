@@ -1,19 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "PhoneBook.Web/**",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "PhoneBook.Web/dist/phone-book.web"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "PhoneBook.Web/dist/phone-book.web/index.html"
-    }
-  ],
   "installCommand": "cd PhoneBook.Web && npm install --legacy-peer-deps",
-  "buildCommand": "cd PhoneBook.Web && npm run build"
+  "buildCommand": "cd PhoneBook.Web && npm run build",
+  "outputDirectory": "PhoneBook.Web/dist/phone-book.web",
+  "framework": "angular"
 }
